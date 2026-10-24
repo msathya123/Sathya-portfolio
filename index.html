@@ -106,6 +106,10 @@
             text-decoration: none;
         }
 
+        .btn:hover {
+            background: white;
+        }
+
         .section-title {
             font-size: 32px;
             margin-bottom: 25px;
@@ -133,6 +137,15 @@
         .skill:hover {
             background: #5eead4;
             color: #0b1120;
+        }
+
+        .skill-heading {
+            color: #5eead4;
+            margin-bottom: 15px;
+        }
+
+        .backend-heading {
+            margin-top: 28px;
         }
 
         .card-container {
@@ -165,9 +178,18 @@
             color: #c4cede;
         }
 
+        .contact p {
+            margin-bottom: 12px;
+            overflow-wrap: anywhere;
+        }
+
         .contact a {
             color: #5eead4;
             text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -215,123 +237,139 @@
 
 <body>
 
-<header>
-    <div class="logo">Sathya Roopa.</div>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Sathya Roopa.</div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section class="hero" id="home">
-    <div class="hero-text">
-        <p class="tag">Welcome to my portfolio</p>
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="tag">Welcome to my portfolio</p>
 
-        <h1>Hi, I'm <span>Sathya Roopa</span></h1>
+            <h1>Hi, I'm <span>Sathya Roopa</span></h1>
 
-        <h2>Student | Aspiring Software Developer</h2>
+            <h2>Student | Aspiring Software Developer</h2>
+
+            <p>
+                I am a student passionate about programming,
+                technology, and software development.
+                I enjoy learning new technologies and building
+                useful projects that solve real-world problems.
+            </p>
+
+            <a href="#about" class="btn">
+                Explore My Portfolio
+            </a>
+        </div>
+
+        <!-- Keep sathya.jpg in the same folder as index.html -->
+        <img src="sathya.jpg"
+             alt="Sathya Roopa's Profile Photo"
+             class="profile">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p class="about-text">
+            Hello! I'm Sathya Roopa. I am interested in
+            programming and web development. I have knowledge
+            of HTML, CSS, Python, and Java. I enjoy improving
+            my technical skills by developing projects such as
+            a Personal Health Record Monitoring System and a
+            Mini Library Catalogue. My goal is to become a
+            skilled professional and continuously improve
+            my knowledge.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <h3 class="skill-heading">Frontend Languages</h3>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+        </div>
+
+        <h3 class="skill-heading backend-heading">
+            Backend Languages
+        </h3>
+
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Personal Health Record Monitoring System</h3>
+
+                <p>
+                    A project focused on organizing and monitoring
+                    personal health records, helping users maintain
+                    health information in an accessible format.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mini Library Catalogue</h3>
+
+                <p>
+                    A simple library catalogue project designed
+                    to organize book details and make it easier
+                    to search for and manage library books.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
 
         <p>
-            I am a student passionate about programming,
-            technology, and software development.
-            I enjoy learning new technologies and building
-            useful projects that solve real-world problems.
+            Email:
+            <a href="mailto:msathya1426@gmail.com">
+                msathya1426@gmail.com
+            </a>
         </p>
 
-        <a href="#about" class="btn">Explore My Portfolio</a>
-    </div>
+        <p>
+            GitHub:
+            <a href="https://github.com/msathya123"
+               target="_blank"
+               rel="noopener noreferrer">
+                github.com/msathya123
+            </a>
+        </p>
+    </section>
 
-    <img src="sathya.jpg"
-         alt="Sathya Roopa's Profile Photo"
-         class="profile">
-</section>
-
-<section id="about">
-    <h2 class="section-title">About <span>Me</span></h2>
-
-    <p class="about-text">
-        Hello! I'm Sathya Roopa. I am interested in
-        programming and web development. I have knowledge
-        of Python, Java, C, HTML, and CSS. I am developing
-        my technical skills by working on projects such as
-        a Personal Health Record Monitoring System and a
-        Mini Library Catalogue. My goal is to become a
-        skilled professional and continuously improve
-        my knowledge.
-    </p>
-</section>
-
-<section id="skills">
-    <h2 class="section-title">My <span>Skills</span></h2>
-
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">Java</div>
-        <div class="skill">C Programming</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2 class="section-title">My <span>Projects</span></h2>
-
-    <div class="card-container">
-
-        <div class="card">
-            <h3>Personal Health Record Monitoring System</h3>
-            <p>
-                A project focused on organizing and monitoring
-                personal health records, helping users maintain
-                health information in an accessible format.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Mini Library Catalogue</h3>
-            <p>
-                A simple library catalogue project designed
-                to organize book details and make it easier
-                to search for and manage library books.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <h2 class="section-title">Contact <span>Me</span></h2>
-
-    <p>
-        Email:
-        <a href="mailto:yourmail@example.com">
-            yourmail@example.com
-        </a>
-    </p>
-
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/">
-            Add your LinkedIn profile
-        </a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/">
-            Add your GitHub profile
-        </a>
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 Sathya Roopa | Personal Portfolio</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sathya Roopa | Personal Portfolio</p>
+    </footer>
 
 </body>
 </html>
+
 
