@@ -1,0 +1,295 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathya Roopa | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111a2e;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            color: #5eead4;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover {
+            color: #5eead4;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(36px, 5vw, 58px);
+            margin: 12px 0;
+        }
+
+        .hero-text h1 span {
+            color: #5eead4;
+        }
+
+        .hero-text p {
+            color: #b7c3d8;
+            max-width: 550px;
+        }
+
+        .tag {
+            color: #5eead4;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .profile {
+            width: 270px;
+            height: 320px;
+            border: 3px solid #5eead4;
+            border-radius: 25px;
+            object-fit: cover;
+            box-shadow: 0 0 35px #5eead433;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            background: #5eead4;
+            color: #0b1120;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .section-title span {
+            color: #5eead4;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #111a2e;
+            padding: 25px;
+            border: 1px solid #26344c;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #5eead4;
+        }
+
+        .card h3 {
+            color: #5eead4;
+            margin-bottom: 10px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            color: #c4cede;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 18px;
+            background: #111a2e;
+            border: 1px solid #5eead4;
+            border-radius: 25px;
+        }
+
+        .contact a {
+            color: #5eead4;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111a2e;
+            color: #aab6ca;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .profile {
+                width: 220px;
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Sathya Roopa.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <p class="tag">Welcome to my portfolio</p>
+
+        <h1>Hi, I'm <span>Sathya Roopa</span></h1>
+
+        <h2>Student | Aspiring Professional</h2>
+
+        <p>
+            I am passionate about learning new things, developing my skills,
+            and exploring creative ideas. Welcome to my personal portfolio!
+        </p>
+
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+
+    <!-- Keep sathya.jpg in the same folder as this HTML file -->
+    <img src="sathya.jpg"
+         alt="Sathya Roopa's Profile Photo"
+         class="profile">
+</section>
+
+<section id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+
+    <p class="about-text">
+        Hello! I'm Sathya Roopa. I enjoy learning, discovering new
+        opportunities, and improving my knowledge and abilities.
+        My goal is to grow personally and professionally while working
+        towards my future ambitions.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+
+    <div class="skills">
+        <div class="skill">Communication</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Creativity</div>
+        <div class="skill">Teamwork</div>
+        <div class="skill">Learning</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My <span>Projects</span></h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Project One</h3>
+            <p>Add your first project description here.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Two</h3>
+            <p>Add your second project description here.</p>
+        </div>
+
+        <div class="card">
+            <h3>Achievements</h3>
+            <p>Add your certificates, achievements, and activities here.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact <span>Me</span></h2>
+
+    <p>Email: <a href="mailto:yourmail@example.com">
+        yourmail@example.com</a></p>
+
+    <p>LinkedIn: <a href="https://www.linkedin.com/">
+        Add your LinkedIn profile</a></p>
+
+    <p>GitHub: <a href="https://github.com/">
+        Add your GitHub profile</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Sathya Roopa | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
+```
